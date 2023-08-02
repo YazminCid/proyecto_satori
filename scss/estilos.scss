@@ -1,0 +1,27 @@
+@import "variable.scss";
+@import "utilitarias.scss";
+@import "reset.scss";
+@import "header.scss";
+@import "main.scss";
+@import "mainContacto.scss";
+@import "footer.scss";
+
+
+@font-face {
+    font-family: $font-regular;
+    src: url(../assets/font/dmSans.ttf);
+}
+
+@font-face {
+    font-family: $font-bold;
+    src: url(../assets/font/DMSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: DM_sans_italic;
+    src: url(../assets/font/DMSans-Italic.ttf);
+}
+
+
+
+
