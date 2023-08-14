@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Inicio | SATORI</title>
+    <title>Satori | Centro Holístico</title>
+    <meta name="description"
+        content="Bienvenido al Centro Holístico Satori✨. Ofrecemos una variedad de terapias y servicios holísticos para el bienestar del cuerpo, mente y espíritu. Visítanos para encontrar equilibrio y armonía en tu vida.">
+    <meta name="keywords"
+        content="Centro Holístico, Terapias Holísticas, Bienestar, Cuerpo, Mente, Espíritu, Equilibrio, Armonía, Meditación, Yoga, Reiki, Terapias Alternativas">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -45,26 +50,33 @@
         </nav>
     </header>
 
-    <aside class="mt-5"><!--Publicidad que abarca el ancho de la pantalla-->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+
+
+    <aside class="mt-5">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/PUBLICIDAD1.png" class="d-block w-100" alt="publicidad tarot - articulo">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="./assets/video/TAROT-EN-CASA.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/PUBLICIDAD3.png" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="./assets/video/YOGA-PARA-PRINCIPIANTES.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/PUBLICIDAD4.png" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="./assets/video/SAHUMAR.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -76,7 +88,7 @@
             <h1 class="tituloPrincipal"> DESCUBRÍ EL EQUILIBRIO DE TU CUERPO, MENTE Y ALMA<br>
                 EN NUESTRO CENTRO DE FORMACIÓN
                 HOLÍSTICA🌿✨</h1>
-            <H2>¡Te acompañamos con amor!</H2>
+            <H2 class="animate__animated animate__pulse animate__repeat-3">¡Te acompañamos con amor!</H2>
             <div class="container gallery-container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
@@ -182,41 +194,43 @@
         </section>
     </aside>
 
-    <!--Whatsapp fixed en todas las páginas-->
-    <aside>
-        <a target="_blank" href="https://web.whatsapp.com/">
-            <img class="whatsappFixed" src="./assets/img/Acceso directo whatsapp.png" alt="whatsapp">
-        </a>
-    </aside>
 
-    <footer class="footer">
-        <section class="sectionFooter">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-2 col-md-auto">
-                        <a class="anclasRedes" target="_blank" href="https://web.whatsapp.com/">
-                            <img src="./assets/img/whatsapp.png" alt="whatsapp">
-                        </a>
-                    </div>
-                    <div class="col-2 col-md-auto">
-                        <a class="anclasRedes" target="_blank" href="https://es-la.facebook.com/">
-                            <img src="./assets/img/facebook.png" alt="facebook">
-                        </a>
-                    </div>
-                    <div class="col-2 col-md-auto">
-                        <a class="anclasRedes" target="_blank" href="https://www.instagram.com/">
-                            <img src="./assets/img/instagram.png" alt="instagram">
-                        </a>
-                    </div>
+<!--Whatsapp fixed en todas las páginas-->
+<aside>
+    <a target="_blank" href="https://web.whatsapp.com/">
+        <img class="whatsappFixed" src="./assets/img/Acceso directo whatsapp.png" alt="whatsapp">
+    </a>
+    
+</aside>
+
+<footer class="footer">
+    <section class="sectionFooter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-2 col-md-auto">
+                    <a class="anclasRedes" target="_blank" href="https://web.whatsapp.com/">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-2 col-md-auto">
+                    <a class="anclasRedes" target="_blank" href="https://es-la.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="col-2 col-md-auto">
+                    <a class="anclasRedes" target="_blank" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <div class="container text-center">
-            <p class="parrafoFooter">© Todos los derechos reservados</p>
         </div>
-    </footer>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    </section>
+    <div class="container text-center">
+        <p class="parrafoFooter">© Todos los derechos reservados</p>
+    </div>
+</footer>
 </body>
+<script src="https://kit.fontawesome.com/7f526fcd49.js" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>

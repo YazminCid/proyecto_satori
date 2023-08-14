@@ -1,0 +1,24 @@
+.navbar-toggler {
+    background: linear-gradient(261deg, $color-primary 0%, $color-accent 100%);
+}
+
+.bg-nav {
+    background: linear-gradient(261deg, $color-primary 0%, $color-accent 100%);
+    position: fixed;
+}
+
+.anclaNav:hover {
+    color: $color-accent !important
+}
+
+
+.anclaNav {
+    color: $color-white;
+    text-decoration: none;
+    margin: 10px;
+    width: 50%;
+
+    @media (max-width: 768px) {
+        color: $color-primary;
+    }
+}

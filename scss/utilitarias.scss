@@ -1,0 +1,42 @@
+.whatsappFixed {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    background-color:$color-gradiante;
+    color: $color-white;
+    border-radius: 50%;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.parrafoJustificado {
+    font-family: DM_sans_regular;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.parrafoCentrado {
+    font-family: DM_sans_regular;
+    text-align: center;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}

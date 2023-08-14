@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos | SATORI</title>
+    <title>Cursos | Satori Centro holístico</title>
+    <meta name="description"
+        content="Bienvenido al Centro Holístico Satori✨. Ofrecemos una variedad de terapias y servicios holísticos para el bienestar del cuerpo, mente y espíritu. Visítanos para encontrar equilibrio y armonía en tu vida.">
+    <meta name="keywords"
+        content="Centro Holístico, Terapias Holísticas, Bienestar, Cuerpo, Mente, Espíritu, Equilibrio, Armonía, Meditación, Yoga, Reiki, Terapias Alternativas">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -45,26 +51,30 @@
             </div>
         </nav>
     </header>
-    <aside class="mt-5"><!--Publicidad que abarca el ancho de la pantalla-->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <aside class="mt-5">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/img/PUBLICIDAD3.png" class="d-block w-100" alt="publicidad tarot - articulo">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="../assets/video/MEDITACION.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/PUBLICIDAD4.png" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="../assets/video/YOGA-PARA-EMBARAZADAS.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/PUBLICIDAD1.png" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay muted>
+                        <source src="../assets/video/COMO-MANIFESTARSE.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -74,7 +84,7 @@
         <section class="grupoCards">
             <h1 class="tituloPrincipal">LOS MEJORES CURSOS PARA LA TRANSFORMACIÓN,<br>EVOLUCIÓN Y CRECIMIENTO PERSONAL
             </h1>
-            <div class="container">
+            <div class="container gallery-container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="gallery-item">
@@ -132,11 +142,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Segunda galería -->
-            <div class="container">
-                <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="gallery-item">
                             <div class="youtube-container">
@@ -149,8 +154,9 @@
                             <div class="caption">
                                 <h1 class="titulosCards">Herramientas para superar la ansiedad a través de la meditación
                                     🧘</h1>
-                                <p class="articulos">Con nuestro mundo moviéndose a un 
-                                    ritmo desorbitadamente acelerado, los trastornos de ansiedad están en su punto más alto. <br>
+                                <p class="articulos">Con nuestro mundo moviéndose a un
+                                    ritmo desorbitadamente acelerado, los trastornos de ansiedad están en su punto más
+                                    alto. <br>
                                     Se necesita compromiso y práctica para ralentizar el ritmo y calmar nuestro sistema
                                     nervioso sobre estimulado. <br>
                                     Este kit de herramientas te ayudará a hacer precisamente
@@ -169,7 +175,11 @@
                             </div>
                             <div class="caption">
                                 <h1 class="titulosCards">Meditación guiada para dormir ☸️</h1>
-                                <p class="articulos">Esta es una meditación para dormir rápido con una visualización de una playa en donde podrás hacer limpieza del ruido externo para sumergirte en un espacio de calma y tranquilidad acompañado de música suave y el sonido de las olas del mar. De este modo, podrás reducir la ansiedad y las preocupaciones y centrarte en esta meditación guiada, en tu respiración, y en tu cuerpo durante una hora.</p>
+                                <p class="articulos">Esta es una meditación para dormir rápido con una visualización de
+                                    una playa en donde podrás hacer limpieza del ruido externo para sumergirte en un
+                                    espacio de calma y tranquilidad acompañado de música suave y el sonido de las olas
+                                    del mar. De este modo, podrás reducir la ansiedad y las preocupaciones y centrarte
+                                    en esta meditación guiada, en tu respiración, y en tu cuerpo durante una hora.</p>
                             </div>
                         </div>
                     </div>
@@ -184,8 +194,11 @@
                             </div>
                             <div class="caption">
                                 <h1 class="titulosCards">Tu primera clase de yoga (Nivel principiante)</h1>
-                                <p class="articulos">Tu primera clase de yoga" está pensada para que te la tomes de forma calmada, disfrutando de cada una de las asanas de yoga que descubrirás.<br>
-                                    Ahonda en tu propia comodidad con una respiración consciente, siempre por la nariz. ¿Estás preparado para disfrutar de los beneficios del yoga en casa practicando conmigo?. <br>
+                                <p class="articulos">Tu primera clase de yoga" está pensada para que te la tomes de
+                                    forma calmada, disfrutando de cada una de las asanas de yoga que descubrirás.<br>
+                                    Ahonda en tu propia comodidad con una respiración consciente, siempre por la nariz.
+                                    ¿Estás preparado para disfrutar de los beneficios del yoga en casa practicando
+                                    conmigo?. <br>
                                     Namaste 🙏🏻</p>
                             </div>
                         </div>
@@ -194,21 +207,25 @@
             </div>
         </section>
 
-        <section>
+
+        <section class="center-section">
             <h2 class="text-center">Te dejamos algunos artículos de interés</h2>
             <div class="container">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col">
                         <a href="https://mejorespodcast.com/meditacion/" target="_blank">
-                            <img class="img-fluid rounded rounded-25" src="../assets/img/puclicidad2.png" alt="publicidad - mujer en el campo">
+                            <img class="img-fluid rounded rounded-25" src="../assets/img/puclicidad2.png"
+                                alt="publicidad - mujer en el campo">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+
     </main>
-    <aside><a target="_blank" href="https://web.whatsapp.com/">
+    <aside>
+        <a target="_blank" href="https://web.whatsapp.com/">
             <img class="whatsappFixed" src="../assets/img/Acceso directo whatsapp.png" alt="whatsapp">
     </aside>
     <footer class="footer">
@@ -217,17 +234,17 @@
                 <div class="row justify-content-center">
                     <div class="col-2 col-md-auto">
                         <a class="anclasRedes" target="_blank" href="https://web.whatsapp.com/">
-                            <img src="../assets/img/whatsapp.png" alt="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                     <div class="col-2 col-md-auto">
                         <a class="anclasRedes" target="_blank" href="https://es-la.facebook.com/">
-                            <img src="../assets/img/facebook.png" alt="facebook">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                     <div class="col-2 col-md-auto">
                         <a class="anclasRedes" target="_blank" href="https://www.instagram.com/">
-                            <img src="../assets/img/instagram.png" alt="instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -237,7 +254,9 @@
             <p class="parrafoFooter">© Todos los derechos reservados</p>
         </div>
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="https://kit.fontawesome.com/7f526fcd49.js" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
 
 </html>

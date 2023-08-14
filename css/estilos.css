@@ -5,75 +5,87 @@
 
 @font-face {
     font-family: DM_sans_bold;
-    src: url(../assets/font/DMSans-Bold.ttf)
+    src: url(../assets/font/DMSans-Bold.ttf);
 }
 
 @font-face {
     font-family: DM_sans_italic;
-    src: url(../assets/font/DMSans-Italic.ttf)
+    src: url(../assets/font/DMSans-Italic.ttf);
+}
+
+body {
+    font-family: DM_sans_regular;
+    color: #212121;
 }
 
 section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 0;
+    overflow-x: hidden;
 }
 
+section .tituloPrincipal {
+    text-align: center;
+    margin: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    color: #6077A3;
+    margin: 1rem;
+}
+
+section h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+section .parrafoJustificado {
+    text-align: justify;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
+    font-size: 1rem;
+}
 
 .navbar-toggler {
-    background: linear-gradient(261deg, #C0C8DA 0%, #EECBD6 100%);
+    background: linear-gradient(261deg, #6077A3 0%, #EECBD6 100%);
 }
 
 .bg-nav {
-    background: linear-gradient(261deg, #C0C8DA 0%, #EECBD6 100%);
+    background: linear-gradient(261deg, #6077A3 0%, #EECBD6 100%);
     position: fixed;
 }
 
+
 .anclaNav {
-    color: #6077A3;
+    color: white;
     text-decoration: none;
     margin: 10px;
     width: 50%;
-    font-family: DM_sans_regular;
+    transition: color 0.3s;
+
+    @media (max-width: 768px){
+        color: 6077A3;
+}
 }
 
-.tituloPrincipal {
-    font-family: DM_sans_regular;
-    text-align: center;
-    color: #212121;
-    margin: 1rem;
+
+.navbar-nav .nav-item .anclaNav:hover {
+    color: #f7f7f7 !important;
 }
 
-h2 {
-    font-family: DM_sans_regular;
-    text-align: center;
-    color: #6077A3;
-    margin: 1rem;
-}
-
-h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-family: DM_sans_regular;
-    text-align: center;
-    color: #212121;
-}
-
-.contenedorCard {
-    background: #6077A3;
-}
-
-.gallery-item {
+.gallery-container .gallery-item {
     background-color: #6077A3;
     border-radius: 25px;
 }
 
-.gallery-item img {
+.gallery-container .gallery-item img {
     width: 100%;
     height: auto;
 }
 
-.gallery-item .caption {
-    color: #FFF;
+.gallery-container .gallery-item .caption {
+    color: #FFFFFF;
     text-align: center;
     margin-top: 5px;
 }
@@ -85,7 +97,7 @@ h3 {
 
 .titulosCards {
     font-family: DM_sans_bold;
-    color: #Ffffff;
+    color: #FFFFFF;
     font-size: 18px;
     margin: 10px;
     padding: 10px;
@@ -94,10 +106,9 @@ h3 {
 }
 
 .articulos {
-    color: #Ffffff;
+    color: #FFFFFF;
     font-size: 1rem;
     text-decoration: none;
-    font-family: DM_sans_regular;
     padding: 10px;
     margin: 10px;
     text-align: justify;
@@ -106,11 +117,9 @@ h3 {
 .youtube-video {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    
-  }
+}
 
 .parrafoUsuarios {
-    font-family: DM_sans_regular;
     text-align: justify;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -125,28 +134,19 @@ h3 {
     margin-inline-end: 0.5rem;
 }
 
-.parrafoFooter {
-    font-family: DM_sans_regular;
-    text-align: center;
-    vertical-align: middle;
-}
-
-/* Esto es para los párrafos que ocupan el ancho de la página*/
-
-.parrafoJustificado {
-    font-family: DM_sans_regular;
-    text-align: justify;
-    margin-inline-start: 3%;
-    margin-inline-end: 3%;
-    font-size: 1rem;
-}
-
-.card{
-    vertical-align: middle;
-    text-align: center;
+.center-section {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 50vh;
+    /* Ajusta esta altura según tus necesidades */
 }
-/* Esto es el formulario de contacto, main solo de "contacto" */
+
+.parrafoFooter {
+    text-align: center;
+    vertical-align: middle;
+}
+
 .main-contacto {
     display: flex;
     flex-direction: column;
@@ -154,15 +154,14 @@ h3 {
     align-items: center;
 }
 
-.content-wrapper {
+.main-contacto .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.formularioContacto {
-    font-family: DM_sans_regular;
+.main-contacto .content-wrapper .formularioContacto {
     padding: 25px;
     text-align: center;
     background: linear-gradient(233.55deg, #D9E1F2 -0.36%, #F3D8E0 96.96%);
@@ -172,10 +171,10 @@ h3 {
     margin: 10px;
 }
 
-.formularioContacto input[type="text"],
-.formularioContacto input[type="email"],
-.formularioContacto input[type="tel"],
-.formularioContacto textarea {
+.main-contacto .content-wrapper .formularioContacto input[type=text],
+.main-contacto .content-wrapper .formularioContacto input[type=email],
+.main-contacto .content-wrapper .formularioContacto input[type=tel],
+.main-contacto .content-wrapper .formularioContacto textarea {
     border: none;
     border-bottom: 1px solid #6077A3;
     padding: 5px;
@@ -185,9 +184,7 @@ h3 {
     font-size: 1rem;
 }
 
-/* Boton BORRAR FORMULARIO*/
-.botonBorrar {
-    font-family: DM_sans_regular;
+.main-contacto .content-wrapper .botonBorrar {
     border-radius: 10px;
     background: #FFFFFF;
     color: #6077A3;
@@ -199,9 +196,7 @@ h3 {
     margin: 5px;
 }
 
-/* Boton ENVIAR FORMULARIO*/
-.botonEnviar {
-    font-family: DM_sans_regular;
+.main-contacto .content-wrapper .botonEnviar {
     border-radius: 10px;
     background: linear-gradient(233.55deg, #7E9CD7 -0.36%, #7E9CD7 27.45%, #5D84CF 53.71%, #4D6FAE 77.39%, #395C9E 98.46%);
     color: #FFFFFF;
@@ -213,30 +208,42 @@ h3 {
     margin: 5px;
 }
 
-/* Mapa de ubicación */
-.maps {
+.main-contacto .content-wrapper .maps {
     padding: 1rem;
     width: 70%;
 }
 
-/* whatsapp fixed en todas las pantalla*/
 .whatsappFixed {
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
 
-/* footer*/
-footer {
-    font-family: DM_sans_regular;
-    background: linear-gradient(261deg, #C0C8DA 0%, #EECBD6 100%);
+/* Estilos generales del footer */
+.footer {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(261deg, #6077A3 0%, #EECBD6 100%);
     text-align: center;
     height: 100%;
-    margin-top: 1%;
-    margin-bottom: 0px;
-
 }
 
+/* Estilos para los iconos enlaces */
 .anclasRedes {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
     margin: 10px;
+}
+
+i {
+    color: #6077A3
+}
+
+/* Estilos para el párrafo del footer */
+.parrafoFooter {
+    color: white;
 }
