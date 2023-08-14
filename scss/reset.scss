@@ -7,3 +7,15 @@ body {
     font-family: $font-regular;
     color: $color-text;
 }
+
+.anclaNav {
+    color: $color-white;
+    text-decoration: none;
+    margin: 10px;
+    width: 50%;
+    transition: color 0.3s;
+
+    @media (max-width: 768px) {
+        color: $color-primary;
+    }
+}

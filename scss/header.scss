@@ -17,8 +17,13 @@
     text-decoration: none;
     margin: 10px;
     width: 50%;
+    transition: color 0.3s;
 
     @media (max-width: 768px) {
         color: $color-primary;
     }
+}
+
+.navbar-nav .nav-item .anclaNav:hover {
+    color: #f7f7f7 !important;
 }
