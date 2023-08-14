@@ -1,10 +1,11 @@
-section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+main{
+    margin-top: 1%;
+}
 
-    .tituloPrincipal {
+section {
+    .tituloPrincipal h1{
         text-align: center;
-        margin: 1rem;
+        margin-top: 1rem;
     }
 
     h2 {
@@ -20,6 +21,8 @@ section {
     }
 
     .parrafoJustificado {
+        margin-left: 50px;
+        margin-right: 50px;
         text-align: justify;
         margin-inline-start: 3%;
         margin-inline-end: 3%;
@@ -39,7 +42,7 @@ section {
         }
 
         .caption {
-            color: $color-white;
+            color: $color-primary;
             text-align: center;
             margin-top: 5px;
         }
@@ -88,4 +91,11 @@ section {
     text-align: center;
     margin-inline-start: 0.5rem;
     margin-inline-end: 0.5rem;
+}
+
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ajusta esta altura según tus necesidades */
 }

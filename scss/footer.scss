@@ -1,16 +1,30 @@
-// footer
-footer {
-    font-family: $font-regular;
+/* Estilos generales del footer */
+.footer {
+    font-family: Arial, sans-serif;
     background: linear-gradient(261deg, $color-primary 0%, $color-accent 100%);
     text-align: center;
     height: 100%;
-
-    .anclasRedes {
-        margin: 10px;
-
-    }
+    margin-bottom: 0px;
 }
 
+/* Estilos para los iconos enlaces */
+.anclasRedes {
+    display: inline-block;
+    width: 50px;
+    height: 50px; 
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+}
+
+i {
+    color: $color-primary;
+}
+
+/* Estilos para el párrafo del footer */
 .parrafoFooter {
-    vertical-align: middle;
+    color: white;
 }
+

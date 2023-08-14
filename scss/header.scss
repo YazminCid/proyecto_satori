@@ -7,8 +7,13 @@
     position: fixed;
 }
 
+.anclaNav:hover {
+    color: $color-accent !important
+}
+
+
 .anclaNav {
-    color: $color-white !important;
+    color: $color-white;
     text-decoration: none;
     margin: 10px;
     width: 50%;
